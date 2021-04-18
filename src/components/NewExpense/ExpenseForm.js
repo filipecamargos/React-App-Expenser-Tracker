@@ -27,13 +27,18 @@ const ExpenseForm = () => {
     const submitHandler = (event) => {
         event.preventDefault();
 
+        //set a object with the entered data
         const expenseData = {
             title: title,
             amount: amount,
             date: new Date(date)
         };
 
-        console.log(expenseData)
+        //Set the values in the input to empty
+        setTitle('');
+        setAmount('');
+        setDate('');
+        
     }
 
     return (

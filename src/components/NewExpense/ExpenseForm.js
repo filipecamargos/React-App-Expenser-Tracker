@@ -12,25 +12,22 @@ const ExpenseForm = () => {
 
     //Change the title on change
     const titleChangeHandler = (event) => {
-        setInput({
-            ...input,
-            title: event.taget.value
+        setInput((prevState) => {
+            return {...prevState, title: event.target.value}
         });
     };
 
     //Change the amount on change
     const amountChangeHandler = (event) => {
-        setInput({
-            ...input,
-            amount: event.taget.value
+        setInput((prevState) => {
+            return {...prevState, amount: event.target.value}
         });
     };
 
     //Change the date on change
     const dateChangeHandler = (event) => {
-        setInput({
-            ...input,
-            date: event.taget.value
+        setInput((prevState) => {
+            return {...prevState, date: event.target.value}
         });
     };
 

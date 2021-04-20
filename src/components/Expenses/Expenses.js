@@ -16,16 +16,16 @@ const Expenses = (props) => {
 
   return (
     <div>
+      <Card className="expenses">
       <ExpensesFilter selectedYear={filteredYear} onFilterDateSelected={filterHandler} />
       {props.items.map((expense) => (
-        <Card className="expenses">
           <ExpenseItem
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
           ></ExpenseItem>
-        </Card>
       ))}
+     </Card>
     </div>
   );
 };

@@ -27,13 +27,12 @@ const App = () => {
   //add a new expense
   const addExpenseHandler = (expense) => {
     console.log("App Component");
-    console.log(expense)
-
-  }
+    console.log(expense);
+  };
 
   return (
     <div>
-      <NewExpense onAddExpense={addExpenseHandler}/>
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );

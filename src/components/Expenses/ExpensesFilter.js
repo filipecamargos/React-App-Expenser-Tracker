@@ -8,7 +8,8 @@ const ExpensesFilter = (props) => {
 
     //Handle the date selected
     const selectedDateHandler = (event) => {
-        setSelectedDate(event.target.value);
+        setSelectedDate(event.target.value);    
+        props.onFilterDateSelected(event.target.value);
     };
 
     return (

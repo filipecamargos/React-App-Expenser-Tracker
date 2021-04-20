@@ -7,7 +7,7 @@ const ExpensesFilter = (props) => {
     const [selectedDate, setSelectedDate] = useState('');
 
     //Handle the date selected
-    const selectedDateHandler = (event) => {
+    const selectedDateFilterHandler = (event) => {
         setSelectedDate(event.target.value);    
         props.onFilterDateSelected(event.target.value);
     };
@@ -16,7 +16,7 @@ const ExpensesFilter = (props) => {
         <div className="expenses-filter">
         <div className="expenses-filter__control">
             <label>Filter by year</label>
-            <select onChange={selectedDateHandler} defaultValue={setSelectedDate}>
+            <select onChange={selectedDateFilterHandler} defaultValue={setSelectedDate}>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>

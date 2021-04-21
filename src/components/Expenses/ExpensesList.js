@@ -6,7 +6,7 @@ const ExpensesList = (props) => {
   //handle the expense content based on logic
   let expenseContent = <p>No Expenses Found!</p>;
 
-
+  
   return (
         <ul className="expenses-list">
         {props.items.map((expense) => (

@@ -17,11 +17,11 @@ const ExpensesChart = (props) => {
   ];
 
   //set the value based on the list of expenses
-  for (const expense in props.expenses) {
+  for (const expense of props.expenses) {
     const expenseMonth = expense.date.getMonth();
     charDataPoints[expenseMonth].value += expense.amount;
   }
-
+  
   return <Chart dataPoints={charDataPoints} />;
 };
 

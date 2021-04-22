@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
@@ -26,18 +26,18 @@ const dummyExpenses = [
   },
 ];
 
-
 const App = () => {
   //state to manage the expensesData
   const [expenses, setExpenses] = useState(dummyExpenses);
 
   //add a new expense
   const addExpenseHandler = (expense) => {
-    setExpenses(prevExpenses => {
+    setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
     });
   };
 
+  //Return the components to be handled in the page
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />

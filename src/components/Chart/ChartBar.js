@@ -1,8 +1,10 @@
 import "./ChartBar.css";
 
 const ChartBar = (props) => {
+  //Initial value for the bar filling css
   let barFillHeight = "0%";
 
+  //Set the hight filling css based on what is passed
   if (props.maxValue > 0) {
     barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
   }

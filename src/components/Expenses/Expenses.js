@@ -8,6 +8,7 @@ import ExpensesChart from "./ExpensesChart";
 import "./Expenses.css";
 
 const Expenses = (props) => {
+  //Instantiate the initial filter based on 2020
   const [filteredYear, setFilteredYear] = useState("2020");
 
   //Update the filtered state

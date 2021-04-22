@@ -1,6 +1,7 @@
 import Chart from "../Chart/Chart";
 
 const ExpensesChart = (props) => {
+  //Determine a whole year with 0 to be used in a lower component
   const charDataPoints = [
     { label: "Jan", value: 0 },
     { label: "Feb", value: 0 },
